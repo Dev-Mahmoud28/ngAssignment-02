@@ -35,6 +35,9 @@ ul{
             box-shadow: 2px 5px 18px #F29724;
             color: white;
             border: none;
+            &:hover{
+                box-shadow: none;
+            }
         }
     }
 }

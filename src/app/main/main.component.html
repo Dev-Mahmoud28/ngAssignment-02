@@ -16,6 +16,9 @@
         <div class="card">
             <img [src]="meal.strMealThumb" alt="">
             <h3> {{meal.strMeal}} </h3>
+            @if(meal.strArea){
+                <h4> <i class="fa-solid fa-earth-europe"></i> {{meal.strArea}} </h4>
+            }
             <button>View Recipe</button>
         </div>
     }

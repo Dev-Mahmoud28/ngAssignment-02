@@ -27,7 +27,6 @@ export class MainComponent implements OnInit{
     this.mealsService.getAll().subscribe({
       next:(res)=>{
         this.meals = res.meals;
-        console.log(res.meals);
       }
     })
   }
