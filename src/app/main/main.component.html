@@ -1,0 +1,22 @@
+<div class="nav">
+    <div class="title">
+        <h1>Learn, Cook, Eat Your Food</h1>
+    </div>
+    <div class="links">
+        <ul>
+            <li><button (click)="getMeal()">All</button></li>
+        @for (mealName of mealsName; track $index) {
+            <li><button (click)="getCategory(mealName)">{{mealsName[$index]}}</button></li>
+        }
+        </ul>
+    </div>
+</div>
+<div class="container">
+    @for (meal of meals; track $index) {
+        <div class="card">
+            <img [src]="meal.strMealThumb" alt="">
+            <h3> {{meal.strMeal}} </h3>
+            <button>View Recipe</button>
+        </div>
+    }
+</div> 
